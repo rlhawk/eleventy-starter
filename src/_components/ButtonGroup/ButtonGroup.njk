@@ -1,0 +1,9 @@
+{% from '../Button/Button.njk' import Button %}
+
+{% macro ButtonGroup(buttons) %}
+  {% for button in buttons %}
+    {{ Button(url=button.url, text=button.text) }}
+  {% endfor %}
+{% endmacro %}
+
+{{ ButtonGroup(buttons) }}

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% from 'ButtonGroup/ButtonGroup.njk' import ButtonGroup %}
+
+<div class="fixed inset-0 flex justify-center items-center">
+  <div>
+    {{ ButtonGroup([
+      {url: '#', text: 'Learn more'},
+      {url: '#', text: 'Learn less'}
+    ]) }}
+  </div>
+</div>
