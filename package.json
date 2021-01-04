@@ -5,8 +5,8 @@
   "keywords": [],
   "license": "GPL-2.0",
   "scripts": {
-    "start": "eleventy --serve & postcss src/**/*.css --output tmp/style.css --watch",
-    "build": "cross-env ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss src/**/*.css --o build/css/style.css",
+    "start": "eleventy --serve & postcss src/style.css --output tmp/style.css --watch",
+    "build": "cross-env ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss src/style.css --output build/css/style.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -28,6 +28,7 @@
     "nunjucks-loader": "^3.0.0",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.0.2"
