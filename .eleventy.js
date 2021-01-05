@@ -38,6 +38,7 @@ module.exports = function (eleventyConfig) {
       output: "build",
       includes: "_components",
       layouts: "_layouts",
+      data: "_data",
     }
   };
 };
