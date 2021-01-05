@@ -1,11 +1,11 @@
-import button from './Button.njk'
+import Button from './Button.njk'
 
 export default {
   title: 'Button',
 }
 
 export const Primary = () => (
-  button.render({
+  Button.render({
     url: '#',
     text: 'Learn more',
   })
