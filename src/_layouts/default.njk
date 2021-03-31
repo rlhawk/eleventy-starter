@@ -14,7 +14,7 @@
     {% block head %}{% endblock %}
     <script src="/js/alpine.js?v={% version %}"></script>
   </head>
-  <body>
+  <body class="{{ 'debug-screens' if env.devMode }}">
     {% block content %}
       {{ content | safe }}
     {% endblock %}
