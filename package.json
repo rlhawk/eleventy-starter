@@ -32,7 +32,8 @@
     "postcss-loader": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.2.1",
-    "tailwindcss": "^2.0.4"
+    "tailwindcss": "^2.0.4",
+    "tailwindcss-debug-screens": "^2.0.0"
   },
   "dependencies": {}
 }
