@@ -1,25 +1,25 @@
-const htmlmin = require("html-minifier");
+const htmlmin = require('html-minifier');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
-  eleventyConfig.addWatchTarget("./tmp/style.css");
+  eleventyConfig.addWatchTarget('./tmp/style.css');
 
-  eleventyConfig.addPassthroughCopy({ "./tmp/style.css": "./css/style.css" });
+  eleventyConfig.addPassthroughCopy({ './tmp/style.css': './css/style.css' });
 
   eleventyConfig.addPassthroughCopy({
-    "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
+    './node_modules/alpinejs/dist/alpine.js': './js/alpine.js',
   });
 
-  eleventyConfig.addShortcode("version", function () {
+  eleventyConfig.addShortcode('version', function () {
     return String(Date.now());
   });
 
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
       process.env.ELEVENTY_PRODUCTION &&
       outputPath &&
-      outputPath.endsWith(".html")
+      outputPath.endsWith('.html')
     ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
@@ -34,11 +34,11 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: "src",
-      output: "build",
-      includes: "_components",
-      layouts: "_layouts",
-      data: "_data",
-    }
+      input: 'src',
+      output: 'build',
+      includes: '_components',
+      layouts: '_layouts',
+      data: '_data',
+    },
   };
 };

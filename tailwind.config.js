@@ -1,14 +1,11 @@
 module.exports = {
   purge: {
-    content: ["build/**/*.html"],
+    content: ['build/**/*.html'],
     options: {
       whitelist: [],
     },
   },
   theme: {},
   variants: {},
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
