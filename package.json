@@ -13,9 +13,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@babel/core": "^7.12.10",
-    "@storybook/addon-essentials": "^6.1.11",
-    "@storybook/addon-links": "^6.1.11",
-    "@storybook/html": "^6.1.11",
+    "@storybook/addon-essentials": "^6.2.1",
+    "@storybook/addon-links": "^6.2.1",
+    "@storybook/html": "^6.2.1",
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.3.1",
     "alpinejs": "^2.8.0",
